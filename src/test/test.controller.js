@@ -5,8 +5,6 @@ const { FindOptions } = require('ottoman');
 const router = express();
 
 router.get('/', async (req, res) => {
-  console.log("hello world");
-  // res.send("working!")
   await makeResponse(res, async () => {
     const options = new FindOptions({
       limit: Number(req.query.limit || 50),

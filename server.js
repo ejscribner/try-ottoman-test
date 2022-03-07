@@ -26,15 +26,6 @@ app.use((err, req, res, next) => {
 
 const main = async () => {
   try {
-    // await ottoman.connect({
-    //   bucketName: 'travel-sample',
-    //   connectionString: 'couchbases://cb.njjncqp3bpvutz.cloud.couchbase.com?ssl=no_verify',
-    //   username: 'test',
-    //   password: 'Helloworld890!'
-    // });
-
-    // await ottoman.connect('couchbases://cb.njjncqp3bpvutz.cloud.couchbase.com/travel-sample')
-
     await ottoman.connect({
       connectionString: 'couchbases://cb.njjncqp3bpvutz.cloud.couchbase.com',
       bucketName: 'travel-sample',
