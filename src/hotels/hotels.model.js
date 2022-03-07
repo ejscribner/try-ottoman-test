@@ -54,7 +54,6 @@ const HotelSchema = new Schema({
 
 HotelSchema.index.findByName = { by: 'name' };
 HotelSchema.index.findByAlias = { by: 'alias', type: 'n1ql' };
-HotelSchema.index.findViewCountry = { by: 'email', type: 'view' };
 HotelSchema.index.findRefName = { by: 'name', type: 'refdoc' };
 const HotelModel = model('hotel', HotelSchema);
 
